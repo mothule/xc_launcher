@@ -5,9 +5,22 @@ This script open .xcodeproj or .xcworkspace via Xcode on command line.
 - If you have xcodeproj and xcworkspace, open xcworkspace.
 - If you have multiple Xcode projects, open the first one with the project name in A-Z order.
 
+## Runtime Requirements
+
+- Ruby 2.6.3 or later
+
 ## Installation
 
+**Download script file**
+```shell script
+$ cd ~/Downloads/
+$ curl -sO https://raw.githubusercontent.com/mothule/xc_launcher/master/xc
+```
 
+**Create symbolic link**
+```shell script
+$ ln -s /usr/local/bin ~/Downloads/xc
+```
 
 ## Usage
 
