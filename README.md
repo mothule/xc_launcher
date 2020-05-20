@@ -17,6 +17,11 @@ $ cd ~/Downloads/
 $ curl -sO https://raw.githubusercontent.com/mothule/xc_launcher/master/xc
 ```
 
+**Run chmod**
+```shell script
+$ chmod 711 xc
+```
+
 **Create symbolic link**
 ```shell script
 $ ln -s /usr/local/bin ~/Downloads/xc
