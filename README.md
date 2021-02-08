@@ -11,20 +11,13 @@ This script open .xcodeproj or .xcworkspace via Xcode on command line.
 
 ## Installation
 
-**Download script file**
+**Download and install script file**
 ```shell script
 $ cd ~/Downloads/
 $ curl -sO https://raw.githubusercontent.com/mothule/xc_launcher/master/xc
-```
-
-**Run chmod**
-```shell script
 $ chmod 711 xc
-```
-
-**Create symbolic link**
-```shell script
-$ ln -s /usr/local/bin ~/Downloads/xc
+$ mv xc your_script_dir_path
+$ ln -s your_script_dir_path/xc /usr/local/bin/
 ```
 
 ## Usage
