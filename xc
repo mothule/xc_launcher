@@ -69,9 +69,11 @@ end
 
 def collect_paths_of_xcode_proj_or_ws(dir: nil)
   dir = dir || Dir.pwd
+  is_flutter = File.join(dir, 'pubspec.yaml')
+  dir =+ File.join(dir, 'ios') if File.exist?(is_flutter) 
   paths = Dir.glob(%w[*.xcodeproj *.xcworkspace], base: dir)
              .map { |name| File.expand_path(name, dir) }
-  paths.tap {|paths| error 'Not found any Xcode project or workspace.' if paths.empty? }
+  paths.tap {|paths| error ERR_MSG if paths.empty? }
 end
 
 def path_of_xcodeproj_or_xcworkspace(path:)
